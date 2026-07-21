@@ -1,0 +1,18 @@
+# Goal
+geometry_msgs/Point pick_position
+float32 pick_orientation      # NEW: Object orientation in degrees (0-360)
+geometry_msgs/Point place_position
+float32 place_orientation     # NEW: Target orientation at place location
+string object_color           # Color for logging/sorting verification
+string target_bin             # NEW: Target bin name (e.g., "red_bin", "blue_bin")
+---
+# Result
+bool success
+float32 execution_time
+string error_message
+---
+# Feedback
+uint8 current_phase           # 0=idle, 1=moving_to_pick, 2=picking, 3=lifting, 
+                              # 4=moving_to_place, 5=placing, 6=retracting
+float32 progress              # 0.0 to 1.0
+string status_message

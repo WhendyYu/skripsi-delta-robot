@@ -1,0 +1,6 @@
+# Request
+---
+# Response
+bool success
+msgs/DetectedObject[] objects
+float32 capture_time_ms

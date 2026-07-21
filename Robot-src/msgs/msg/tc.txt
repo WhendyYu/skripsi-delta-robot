@@ -1,0 +1,9 @@
+std_msgs/Header header
+uint16 trajectory_id		# Trajectory identifier
+TrajectoryPoint[] points	# Waypoints action
+
+
+float32[3] joint_angles       # degrees 
+float32 time_from_start       # seconds
+bool vacuum		      # vacuum state
+uint8 servo_angle	      # degrees (90 deg)

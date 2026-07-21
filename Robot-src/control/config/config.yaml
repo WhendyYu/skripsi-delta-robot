@@ -1,0 +1,85 @@
+delta_controller:
+
+  ros__parameters:
+
+    # ==========================================================
+    # Motion
+    # ==========================================================
+
+    max_velocity: 300.0
+
+    joint_max_velocity: 180.0
+
+    joint_max_acceleration: 720.0
+
+    trajectory_timeout: 3.0
+
+    # ==========================================================
+    # Workspace
+    # ==========================================================
+
+    clearance_height: -280.0
+
+    approach_height: 20.0
+
+    home_position:
+      - 0.0
+      - 0.0
+      - -220.0
+
+    home_move_duration: 3.0
+
+    # ==========================================================
+    # Initialization
+    # ==========================================================
+
+    auto_initialize: true
+
+    init_timeout: 3.0
+
+    reinitialize_after_action: true
+
+    vision_enabled: false
+
+    home_after_action: true
+
+    # ==========================================================
+    # Tooling
+    # ==========================================================
+
+    grip_settle_time: 0.3
+
+
+serial_bridge:
+
+  ros__parameters:
+
+    port: "/dev/ttyUSB0"
+
+    baudrate: 115200
+
+    reconnect_interval: 2.0
+
+
+ik_service:
+
+  ros__parameters:
+
+    upper_arm_length: 100.0
+
+    forearm_length: 300.0
+
+    base_radius: 200.0
+
+    platform_radius: 50.0
+
+
+odete:
+
+  ros__parameters:
+
+    camera_index: 0
+
+    marker_size: 0.04
+
+    workspace_file: '/home/quack/scriptchi/delta/src/odete/config/detector_params.yaml'

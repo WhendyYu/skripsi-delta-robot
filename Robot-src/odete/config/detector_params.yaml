@@ -1,0 +1,9 @@
+detector_node:
+
+  ros__parameters:
+
+    calibration_path: "/home/quack/scriptchi/delta/src/odete/config/camera_calibration.json"
+
+    workspace_path: "/home/quack/scriptchi/delta/src/odete/config/workspace.yaml"
+
+    camera_index: 0

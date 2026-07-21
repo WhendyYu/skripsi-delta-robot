@@ -1,0 +1,7 @@
+# Request
+geometry_msgs/Point[] positions         # batch solve for efficiency
+---
+# Response
+bool success
+float32[] joint_angles                  # 3 angles per position, flattened
+bool[] reachable                        # one per position
